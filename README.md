@@ -1,4 +1,4 @@
-### Hi there 👋
+### Hi there I'm Cezary 👋
 
 I'm BEng in Mechatronics specializing in driver programming.\
 Now I'm MSc in Informatics student.
