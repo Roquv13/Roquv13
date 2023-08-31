@@ -5,9 +5,19 @@
 ```java
 public class HelloWorld {
     public static void selfIntroduction(String[] args) {
-        String selfName = "Cezary";
-        String[] selfLanguage = {"Polish", "English"}
-        String[] codeLanguage = {"Java", "Python"}
+        // Declaring variables
+        String selfName, firstDegree, firstDegreeSpecialization, firstDegreeStatus, secondDegree, secondDegreeStatus;
+        // General
+        selfName = "Cezary";
+        String[] selfLanguage = {"Polish", "English"};
+        String[] codeLanguage = {"Java", "Python"};
+        // Studies
+        firstDegree = "BEng in Mechatronics";
+        firstDegreeSpecialization = "controller programming";
+        firstDegreeStatus = "graduated";
+
+        secondDegree = "MSc in Informatics";
+        secondDegreeStatus = "in progress";
     }
 }
 ```
