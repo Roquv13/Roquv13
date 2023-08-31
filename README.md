@@ -9,7 +9,8 @@
 public class HelloWorld {
     public static void selfIntroduction(String[] args) {
         // Declaring variables
-        String selfName, firstDegree, firstDegreeSpecialization, firstDegreeStatus;
+        String selfName;
+	String firstDegree, firstDegreeSpecialization, firstDegreeStatus;
         String secondDegree, secondDegreeStatus;
         // General
         selfName = "Cezary";
@@ -24,13 +25,6 @@ public class HelloWorld {
         secondDegreeStatus = "in progress";
     }
 }
-
-
-
-
-
-
-
 
 
 
