@@ -7,43 +7,55 @@
 	
 ```java
 public class HelloWorld {
-    public static void selfIntroduction(String[] args) {
-        // Declaring variables
-        String selfName;
-	String firstDegree, firstDegreeSpecialization, firstDegreeStatus;
-        String secondDegree, secondDegreeStatus;
-        // General
-        selfName = "Cezary";
-        String[] selfLanguage = {"Polish", "English"};
-        String[] codeLanguage = {"Java", "Python"};
-        // Studies
-        firstDegree = "BEng in Mechatronics";
-        firstDegreeSpecialization = "controller programming";
-        firstDegreeStatus = "graduated";
+    public static void main(String[] args) {
 
-        secondDegree = "MSc in Informatics";
-        secondDegreeStatus = "in progress";
+        String name, country, language, code, mechatronics, computerScience;
+        int age;
+
+        // General
+        name = "Cezary";
+        age = 24;
+        country = "Poland";
+        language = "Polish ".concat("and English");
+        code = "Java ".concat("and Python");
+        mechatronics = "graduated";
+        computerScience = "in progress";
+
+        // About me
+        System.out.println("Hello my name is " + name.concat("."));
+        System.out.print("I'm " + Integer.toString(age).concat(" years old"));
+        System.out.println(" and I'm from " + country.concat("."));
+        System.out.println("I know two languages " + language.concat("."));
+        System.out.println("I write a code in two languages " + code.concat("."));
+
+        // Studies first degree
+        if (mechatronics.equals("graduated")) {
+            System.out.print("I'm done studies first degree".concat(" "));
+            System.out.print("with Bachelor of Engineering".concat(" in "));
+            System.out.print("Mechatronics".concat(" specialized in "));
+            System.out.println("controller programming".concat("."));
+        } else System.out.println("My studies in Mechatronics are "
+        + mechatronics.concat("."));
+
+        //Studies second degree
+        if (computerScience.equals("graduated")) {
+            System.out.print("My studies second degree".concat(" "));
+            System.out.print("are " + computerScience.concat(" "));
+            System.out.print("with Master of Science".concat(" in "));
+            System.out.print("Computer Science".concat(" specialized in "));
+            System.out.println("information processing systems.");
+        } else System.out.print("My studies in Computer Science are "
+        + computerScience.concat("."));
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ```
+<h2 align="center">Output</h2>
+Hello my name is Cezary.
+I'm 24 years old and I'm from Poland.
+I know two languages Polish and English.
+I write a code in two languages Java and Python.
+I'm done studies first degree with Bachelor of Engineering in Mechatronics specialized in controller programming.
+My studies in Computer Science are in progress.
 
 </td>
 <td>
