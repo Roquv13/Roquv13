@@ -1,7 +1,15 @@
 # Hi there I'm Cezary 👋
-![Profile views](https://visitor-badge.laobi.icu/badge?page_id=roquv13.roquv13)
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=roquv13.roquv13)
 
-
+## About me
+```java
+public class HelloWorld {
+    public static void selfIntroduction(String[] args) {
+        String selfName = "Cezary";
+        String[] selfLanguage = {"Polish", "English"}
+        String[] codeLanguage = {"Java", "Python"}
+    }
+}
 
 I'm BEng in Mechatronics specializing in controller programming.\
 Now I'm MSc in Informatics student.
