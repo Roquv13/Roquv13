@@ -1,3 +1,6 @@
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=roquv13.roquv13)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
+
 ### Hi there I'm Cezary 👋
 
 I'm BEng in Mechatronics specializing in controller programming.\
