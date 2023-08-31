@@ -1,5 +1,6 @@
 # Hi there I'm Cezary 👋
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=roquv13.roquv13)
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=roquv13.roquv13)![Static Badge](https://img.shields.io/badge/OS-MacOS-blue?logo=Apple)
+
 
 ## About me
 ```java
