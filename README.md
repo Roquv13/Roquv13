@@ -50,11 +50,11 @@ public class HelloWorld {
 }
 ```
 <h2 align="center">Output</h2>
-Hello my name is Cezary.
-I'm 24 years old and I'm from Poland.
-I know two languages Polish and English.
-I write a code in two languages Java and Python.
-I'm done studies first degree with Bachelor of Engineering in Mechatronics specialized in controller programming.
+Hello my name is Cezary.<br>
+I'm 24 years old and I'm from Poland.<br>
+I know two languages Polish and English.<br>
+I write a code in two languages Java and Python.<br>
+I'm done studies first degree with Bachelor of Engineering in Mechatronics specialized in controller programming.<br>
 My studies in Computer Science are in progress.
 
 </td>
