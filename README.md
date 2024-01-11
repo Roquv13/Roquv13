@@ -6,55 +6,68 @@
 <td>
 	
 ```java
+import java.util.*;
+
 public class HelloWorld {
     public static void main(String[] args) {
 
-        String name, country, language, code, mechatronics, computerScience;
-        int age;
-
         // General
-        name = "Cezary";
-        age = 24;
-        country = "Poland";
-        language = "Polish ".concat("and English");
-        code = "Java ".concat("and Python");
-        mechatronics = "graduated";
-        computerScience = "in progress";
+        String name = "Cezary";
+        int age = 24;
+        String country = "Poland";
+
+        // Languages
+        Dictionary<Integer, String> languages = new Hashtable<>();
+        languages.put(1, "Polish");
+        languages.put(2, "English");
+
+        // Code
+        List<String> codeLanguages = List.of("Java", "Python");
+
+        // Studies
+        String firstField = "Mechatronics";
+        String secondField = "Computer Science";
 
         // About me
-        System.out.println("Hello my name is " + name.concat("."));
-        System.out.print("I'm " + Integer.toString(age).concat(" years old"));
-        System.out.println(" and I'm from " + country.concat("."));
-        System.out.println("I know two languages " + language.concat("."));
-        System.out.println("I write a code in two languages " + code.concat("."));
+        System.out.println("Hello, my name is " + name + ".");
+        System.out.println("I'm " + age + " years old and I'm from " + country + ".");
+        System.out.printf("I know two languages %s and %s.%n", languages.get(1), languages.get(2));
+        System.out.printf("I write code in two languages %s and %s.%n", codeLanguages.get(0), codeLanguages.get(1));
 
         // Studies first degree
-        if (mechatronics.equals("graduated")) {
-            System.out.print("I'm done studies first degree".concat(" "));
-            System.out.print("with Bachelor of Engineering".concat(" in "));
-            System.out.print("Mechatronics".concat(" specialized in "));
-            System.out.println("controller programming".concat("."));
-        } else System.out.println("My studies in Mechatronics are "
-        + mechatronics.concat("."));
+        String firstDegree = studies(firstField, true, 2023);
+        System.out.println(firstDegree);
 
-        //Studies second degree
-        if (computerScience.equals("graduated")) {
-            System.out.print("My studies second degree".concat(" "));
-            System.out.print("are " + computerScience.concat(" "));
-            System.out.print("with Master of Science".concat(" in "));
-            System.out.print("Computer Science".concat(" specialized in "));
-            System.out.println("information processing systems.");
-        } else System.out.print("My studies in Computer Science are "
-        + computerScience.concat("."));
+        // Studies second degree
+        String secondDegree = studies(secondField, false, 2024);
+        System.out.println(secondDegree);
+
+    }
+
+    public static String studies(String studiesField, boolean isGraduated, int graduationYear) {
+        return switch (studiesField) {
+            case "Mechatronics" -> isGraduated ?
+                    String.format("In %d, I completed my first-degree studies in Mechatronics Engineering with a specialization in controller programming.", graduationYear) :
+                    String.format("My studies in Mechatronics are %s.", status(isGraduated));
+            case "Computer Science" -> isGraduated ?
+                    String.format("In %d, I completed second-degree studies with a master's degree in computer science, specializing in information processing systems.", graduationYear) :
+                    String.format("My studies in Computer Science are %s.", status(isGraduated));
+            default -> "No studies";
+        };
+    }
+
+    public static String status(boolean isGraduated) {
+        return isGraduated ? "graduated" : "in progress";
     }
 }
+
 ```
 <h2 align="center">Output</h2>
 Hello my name is Cezary.<br>
 I'm 24 years old and I'm from Poland.<br>
 I know two languages Polish and English.<br>
 I write a code in two languages Java and Python.<br>
-I'm done studies first degree with Bachelor of Engineering in Mechatronics specialized in controller programming.<br>
+In 2023, I completed my first-degree studies in Mechatronics Engineering with a specialization in controller programming.<br>
 My studies in Computer Science are in progress.
 
 </td>
