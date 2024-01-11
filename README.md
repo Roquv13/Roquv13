@@ -3,7 +3,7 @@
 
 <table class="center">
 
-<td>
+<tr>
 
 ```java
 import java.util.*;
@@ -63,8 +63,9 @@ public class HelloWorld {
     }
 }
 ```
-</td>
+</tr>
 
+<tr>
 <td>
 
 <h2 align="center">📋 Languages
@@ -72,6 +73,9 @@ public class HelloWorld {
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)\
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)</h2>
 
+</td>
+
+<td>
 
 <h2 align="center">💻 IDEs/Editors
 
@@ -79,11 +83,18 @@ public class HelloWorld {
 ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)\
 ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white)</h2>
 
+</td>
+
+<td>
 
 <h2 align="center">🧑‍💻 Forums
 
 ![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white)\
 ![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?style=for-the-badge&logo=Reddit&logoColor=white)</h2>
+
+</td>
+
+<td>
 
 <h2 align="center">🎛️ Operating Systems
 
@@ -92,6 +103,9 @@ public class HelloWorld {
 ![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)\
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)</h2>
 
+</td>
+
+<td>
 
 <h2 align="center">🏢 Office
 
@@ -101,6 +115,8 @@ public class HelloWorld {
 ![Microsoft Word](https://img.shields.io/badge/Microsoft_Word-2B579A?style=for-the-badge&logo=microsoft-word&logoColor=white)</h2>
 
 </td>
+
+</tr>
 
 </table>
 
