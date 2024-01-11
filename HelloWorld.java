@@ -1,24 +1,35 @@
+import java.util.*;
+
 public class HelloWorld {
     public static void main(String[] args) {
 
-        String name, country, language, codeLanguages, firstField, secondField;
+        String name, country;
         int age;
 
         // General
         name = "Cezary";
         age = 24;
         country = "Poland";
-        language = "Polish and English";
-        codeLanguages = "Java and Python";
+
+        // Languages
+        Dictionary<Integer, String> languages = new Hashtable<>();
+        languages.put(1, "Polish");
+        languages.put(2, "English");
+
+        // Code
+        List<String> codeLanguages = new ArrayList<>();
+        codeLanguages.add("Java");
+        codeLanguages.add("Python");
+
         // Studies
-        firstField = "Mechatronics";
-        secondField = "Computer Science";
+        String firstField = "Mechatronics";
+        String secondField = "Computer Science";
 
         // About me
         System.out.println("Hello, my name is " + name + ".");
         System.out.println("I'm " + age + " years old and I'm from " + country + ".");
-        System.out.println("I know two languages: " + language + ".");
-        System.out.println("I write code in two languages: " + codeLanguages + ".");
+        System.out.printf("I know two languages %s and %s.%n", languages.get(1), languages.get(2));
+        System.out.printf("I write code in languages %s and %s.%n", codeLanguages.get(0), codeLanguages.get(1));
 
         // Studies first degree
         String firstDegree = studies(firstField, status(true), 2023);
