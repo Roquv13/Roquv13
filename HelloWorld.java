@@ -3,13 +3,10 @@ import java.util.*;
 public class HelloWorld {
     public static void main(String[] args) {
 
-        String name, country;
-        int age;
-
         // General
-        name = "Cezary";
-        age = 24;
-        country = "Poland";
+        String name = "Cezary";
+        int age = 24;
+        String country = "Poland";
 
         // Languages
         Dictionary<Integer, String> languages = new Hashtable<>();
@@ -17,9 +14,7 @@ public class HelloWorld {
         languages.put(2, "English");
 
         // Code
-        List<String> codeLanguages = new ArrayList<>();
-        codeLanguages.add("Java");
-        codeLanguages.add("Python");
+        List<String> codeLanguages = List.of("Java", "Python");
 
         // Studies
         String firstField = "Mechatronics";
@@ -32,35 +27,32 @@ public class HelloWorld {
         System.out.printf("I write code in languages %s and %s.%n", codeLanguages.get(0), codeLanguages.get(1));
 
         // Studies first degree
-        String firstDegree = studies(firstField, status(true), 2023);
+        String firstDegree = studies(firstField, isGraduated(true), 2023);
         System.out.println(firstDegree);
 
         // Studies second degree
-        String secondDegree = studies(secondField, status(false), 2024);
+        String secondDegree = studies(secondField, isGraduated(false), 2024);
         System.out.println(secondDegree);
 
     }
 
-    public static String status(boolean field) {
-        return field ? "graduated" : "in progress";
+    public static boolean isGraduated(boolean field) {
+        return field;
     }
 
-    public static String studies(String studiesField, String status, int graduationYear) {
-        if (studiesField.equals("Mechatronics")) {
-            if (status.equals("graduated")) {
-                return String.format("In %s, I completed my first-degree studies in Mechatronics Engineering with a specialization in controller programming", graduationYear);
-            } else {
-                return String.format("My studies in Mechatronics are %s.", status );
-            }
-        }
-        if (studiesField.equals("Computer Science")) {
-            if (status.equals("graduated")) {
-                return String.format("In %s, I completed second-degree studies with a master's degree in computer science, specializing in information processing systems", graduationYear);
-            } else {
-                return String.format("My studies in Computer Science are %s.", status);
-            }
-        } else {
-            return "No studies";
-        }
+    public static String studies(String studiesField, boolean isGraduated, int graduationYear) {
+        return switch (studiesField) {
+            case "Mechatronics" -> isGraduated ?
+                    String.format("In %d, I completed my first-degree studies in Mechatronics Engineering with a specialization in controller programming", graduationYear) :
+                    String.format("My studies in Mechatronics are %s.", status(isGraduated));
+            case "Computer Science" -> isGraduated ?
+                    String.format("In %d, I completed second-degree studies with a master's degree in computer science, specializing in information processing systems", graduationYear) :
+                    String.format("My studies in Computer Science are %s.", status(isGraduated));
+            default -> "No studies";
+        };
+    }
+
+    public static String status(boolean isGraduated) {
+        return isGraduated ? "graduated" : "in progress";
     }
 }
