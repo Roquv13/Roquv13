@@ -3,7 +3,7 @@
 
 <table>
 <tr>
-<td>
+
 	
 ```java
 import java.util.*;
@@ -63,17 +63,6 @@ public class HelloWorld {
     }
 }
 ```
-<h2 align="center">Output</h2>
-Hello my name is Cezary.<br>
-I'm 24 years old and I'm from Poland.<br>
-I know two languages Polish and English.<br>
-I write a code in two languages Java and Python.<br>
-In 2023, I completed my first-degree studies in Mechatronics Engineering with a specialization in controller programming.<br>
-My studies in Computer Science are in progress.
-
-</td>
-<td>
-
 <h2 align="center">📋 Languages
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
@@ -91,7 +80,7 @@ My studies in Computer Science are in progress.
 ![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?style=for-the-badge&logo=Reddit&logoColor=white)</h2>
 
 <h2 align="center">🎛️ Operating System
-    
+
 ![Windows 11](https://img.shields.io/badge/Windows%2011-%230079d5.svg?style=for-the-badge&logo=Windows%2011&logoColor=white)
 ![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)
 ![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
@@ -102,8 +91,7 @@ My studies in Computer Science are in progress.
 ![Microsoft Office](https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white)
 ![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
 ![Microsoft PowerPoint](https://img.shields.io/badge/Microsoft_PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white)
-![Microsoft Word](https://img.shields.io/badge/Microsoft_Word-2B579A?style=for-the-badge&logo=microsoft-word&logoColor=white)</h2>	
-</td>
+![Microsoft Word](https://img.shields.io/badge/Microsoft_Word-2B579A?style=for-the-badge&logo=microsoft-word&logoColor=white)</h2>
 </tr>
 </table>
 
