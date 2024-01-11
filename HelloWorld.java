@@ -39,10 +39,12 @@ public class HelloWorld {
     public static String studies(String studiesField, boolean isGraduated, int graduationYear) {
         return switch (studiesField) {
             case "Mechatronics" -> isGraduated ?
-                    String.format("In %d, I completed my first-degree studies in Mechatronics Engineering with a specialization in controller programming.", graduationYear) :
+                    String.format("In %d, I completed my first-degree studies in Mechatronics Engineering " +
+                            "with a specialization in controller programming.", graduationYear) :
                     String.format("My studies in Mechatronics are %s.", status(isGraduated));
             case "Computer Science" -> isGraduated ?
-                    String.format("In %d, I completed second-degree studies with a master's degree in computer science, specializing in information processing systems.", graduationYear) :
+                    String.format("In %d, I completed second-degree studies with a master's degree in " +
+                            "computer science, specializing in information processing systems.", graduationYear) :
                     String.format("My studies in Computer Science are %s.", status(isGraduated));
             default -> "No studies";
         };
