@@ -27,17 +27,13 @@ public class HelloWorld {
         System.out.printf("I write code in languages %s and %s.%n", codeLanguages.get(0), codeLanguages.get(1));
 
         // Studies first degree
-        String firstDegree = studies(firstField, isGraduated(true), 2023);
+        String firstDegree = studies(firstField, true, 2023);
         System.out.println(firstDegree);
 
         // Studies second degree
-        String secondDegree = studies(secondField, isGraduated(false), 2024);
+        String secondDegree = studies(secondField, false, 2024);
         System.out.println(secondDegree);
 
-    }
-
-    public static boolean isGraduated(boolean field) {
-        return field;
     }
 
     public static String studies(String studiesField, boolean isGraduated, int graduationYear) {
